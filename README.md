@@ -8,4 +8,4 @@ apply its changes to the UI since its abstracted.
 
 
 ## Room library implementation
-I implemented room library here by saving the api response to its local database. I added the feature favorites to make the user select their favorite movies and save it in the database.
+I implemented room library here by saving the api response to its local database. I added the feature favorites  to make the user select their favorite movies and save it in the database. After user tap the star button in the list it will be added or considered as a favorite movie thus will also update its data in the database.
