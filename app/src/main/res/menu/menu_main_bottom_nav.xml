@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allMovieList"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_movie_24_white"
+        android:title="All"
+        />
+
+    <item
+        android:id="@+id/favoriteMovieList"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_movie_filter_24_white"
+        android:title="Favorites"
+        />
+</menu>
