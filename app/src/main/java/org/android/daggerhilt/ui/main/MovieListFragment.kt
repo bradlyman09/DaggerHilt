@@ -78,8 +78,13 @@ class MovieListFragment : Fragment() {
         }
 
         viewModel.isRefreshList.observe(viewLifecycleOwner){
-            if (it)
+            if (it){
                 movieAdapter.notifyDataSetChanged()
+                emptyListTextView.visibility = View.GONE
+            }
+            else
+                emptyListTextView.visibility = View.VISIBLE
+
         }
     }
 

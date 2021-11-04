@@ -55,7 +55,7 @@ class MainViewModel @Inject constructor(
         viewModelScope.launch {
             movieList.clear()
             movieList.addAll(movieRepository.getAllMoviesFromDatabase())
-            _isRefreshList.value = movieList.size > 0 //trigger refresh list if movielist size is not empty
+            _isRefreshList.value = movieList.isNotEmpty() //trigger refresh list if movielist size is not empty
         }
 
     }
@@ -64,7 +64,7 @@ class MainViewModel @Inject constructor(
         viewModelScope.launch {
             movieList.clear()
             movieList.addAll(movieRepository.getFavoriteMoviesFromDatabase())
-            _isRefreshList.value = movieList.size > 0 //trigger refresh list if movielist size is not empty
+            _isRefreshList.value = movieList.isNotEmpty() //trigger refresh list if movielist size is not empty
         }
     }
 
